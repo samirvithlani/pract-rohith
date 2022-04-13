@@ -50,6 +50,7 @@ public class DoctorDao {
 
 	public DoctorBean getdoctorbyId(int dId) {
 
+		System.out.println("..");
 		return jdbcTemplate.queryForObject("select * from doctor where did = " + dId + "", new DoctorMapper());
 	}
 

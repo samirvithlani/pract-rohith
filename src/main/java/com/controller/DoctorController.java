@@ -32,6 +32,7 @@ public class DoctorController {
 	public ResponseEntity<DoctorBean> addDoctor(@RequestBody DoctorBean doctorBean) {
 
 		int res = doctorDao.addDoctor(doctorBean);
+		System.out.println("hello");
 
 		if (res > 0) {
 
